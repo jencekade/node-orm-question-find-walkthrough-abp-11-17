@@ -47,3 +47,11 @@ class Question {
 }
 
 module.exports = Question;
+
+
+/*1st we create a const sql that gets SQL CLI command thingy
+2nd we return a promise with db.get to read table
+db.get() callback takes in the SQL command, the column name,
+and function taht returns Question object with the id and content
+properties from the database
+ */
