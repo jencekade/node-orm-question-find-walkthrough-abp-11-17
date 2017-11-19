@@ -37,7 +37,7 @@ class Question {
         const question = new Question(result.id, result.content);
 
         question.id = result.id;
-        question.result = result.content;
+        question.content = result.content;
         //return question.id;
         resolve(question);
 
