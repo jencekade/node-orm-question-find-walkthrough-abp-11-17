@@ -35,10 +35,10 @@ class Question {
     return new Promise(function(resolve) {
       db.get(sql, [id], function(err, result) {
         const question = new Question(result.id, result.content);
-        question.result = result.content;
+        //question.result = result.content;
         question.id = result.id;
-        return question.id;
-        resolve(question)
+        //return question.id;
+        resolve(question);
 
       });
     });
